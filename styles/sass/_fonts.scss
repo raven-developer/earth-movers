@@ -1,5 +1,4 @@
 //font-family
-
 .font-headings {
     font-family: "Figtree", sans-serif;
     font-weight: 700;
@@ -27,6 +26,7 @@ $h3: 2.44rem;
 $h2: 3.05rem;
 $h1: 3.81rem;
 
+//Variables
 .headings {
     line-height: 1.2;
 }
@@ -77,18 +77,19 @@ p {
     letter-spacing: 0;
 }
 
-.w-paragraphs {
+.w-p {
     @extend .font-paragraphs;
     font-size: $rp;
     font-weight: 400;
     letter-spacing: 0;
 }
 
-.w-button {
+.w-p-button {
     @extend .font-paragraphs;
     font-size: $rp;
     font-weight: 700;
     letter-spacing: 0;
+    color: #ffffff;
 }
 
 .w-menu {

@@ -2,5 +2,9 @@
 @use 'sass/_reset';
 @use 'sass/_fonts';
 @use 'sass/_global';
+@use 'sass/_uikit';
 
 //Main
+$primaryColor: #b721ff;
+$black: #0D0D0D;
+$off-black: #171717;
