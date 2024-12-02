@@ -1,0 +1,14 @@
+{
+    "liveSassCompile.settings.compileOnWatch": false,
+    "liveSassCompile.settings.useNewCompiler": true,
+    "liveSassCompile.settings.showOutputWindowOn": "Warning",
+    "liveSassCompile.settings.formats":[
+        {
+            "format": "compressed",
+            "extensionName": "-min.css",
+            "savePath": null,
+            "savePathReplacementPairs": null
+        }
+        
+    ]
+}
