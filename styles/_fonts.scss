@@ -1,0 +1,99 @@
+//font-family
+
+.font-headings {
+    font-family: "Figtree", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.font-paragraphs {
+    font-family: "Figtree", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+//font-scale
+html {
+    font-size: 10px;
+}
+
+$xs: 0.64rem;
+$sm: 0.8rem;
+$rp: 1rem;
+$h6: 1.25rem;
+$h5: 1.56rem;
+$h4: 1.95rem;
+$h3: 2.44rem;
+$h2: 3.05rem;
+$h1: 3.81rem;
+
+.headings {
+    line-height: 1.2;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.w-h1 {
+    @extend .font-headings;
+    font-size: $h1;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+.w-h2 {
+    @extend .font-headings;
+    font-size: $h2;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+.w-h3 {
+    @extend .font-headings;
+    font-size: $h3;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+.w-h4 {
+    @extend .font-headings;
+    font-size: $h4;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+.w-h5 {
+    @extend .font-headings;
+    font-size: $h5;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+.w-h6 {
+    @extend .font-headings;
+    font-size: $h6;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+.w-paragraphs {
+    @extend .font-paragraphs;
+    font-size: $rp;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.w-button {
+    @extend .font-paragraphs;
+    font-size: $rp;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+.w-menu {
+    @extend .font-paragraphs;
+    font-size: $rp;
+    font-weight: 400;
+    letter-spacing: 0;
+}
