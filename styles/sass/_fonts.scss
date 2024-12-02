@@ -1,15 +1,4 @@
-//font-family
-.font-headings {
-    font-family: "Figtree", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.font-paragraphs {
-    font-family: "Figtree", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
+@import '_var';
 
 //font-scale
 html {
@@ -89,7 +78,7 @@ p {
     font-size: $rp;
     font-weight: 700;
     letter-spacing: 0;
-    color: #ffffff;
+    color: #0D0D0D;
 }
 
 .w-menu {

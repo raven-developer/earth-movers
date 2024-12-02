@@ -1,6 +1,9 @@
+@import '_var';
+
 .w-button{
     border-radius: 0;
     background-color: $primaryColor;
     border: 0 solid $primaryColor;
     padding: 16px 32px;
+    color: #ffffff;
 }
