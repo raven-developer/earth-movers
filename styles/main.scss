@@ -1,6 +1,14 @@
 //Imports
 @use 'sass/_reset';
-@use 'sass/var';
+@use 'sass/_var';
 @use 'sass/_fonts';
 @use 'sass/_global';
 @use 'sass/_uikit';
+
+//Individual Adjustments
+.container.hero-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

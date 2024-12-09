@@ -5,19 +5,21 @@ html {
     font-size: 18px;
 }
 
-$xs: 0.64rem;
-$sm: 0.8rem;
+$xs: 0.5rem;
+$sm: 0.707rem;
 $rp: 1rem;
-$h6: 1.25rem;
-$h5: 1.56rem;
-$h4: 1.95rem;
-$h3: 2.44rem;
-$h2: 3.05rem;
-$h1: 3.81rem;
+$lp: 1.333rem;
+$h6: 1.414rem;
+$h5: 1.999rem;
+$h4: 2.827rem;
+$h3: 3.998rem;
+$h2: 5.653rem;
+$h1: 7.993rem;
 
 //Variables
-.headings {
-    line-height: 1.2;
+h1, h2, h4, h5, h6 {
+    line-height: 1;
+    color: $dark;
 }
 
 p {
@@ -68,6 +70,13 @@ p {
     letter-spacing: 0;
 }
 
+.w-p-l {
+    @extend .font-paragraphs;
+    font-size: $rp;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
 .w-p {
     @extend .font-paragraphs;
     font-size: $rp;
@@ -75,17 +84,17 @@ p {
     letter-spacing: 0;
 }
 
-.w-p-button {
-    @extend .font-paragraphs;
-    font-size: $rp;
-    font-weight: 700;
-    letter-spacing: 0;
-    color: #0D0D0D;
-}
-
 .w-menu {
     @extend .font-paragraphs;
     font-size: $rp;
     font-weight: 400;
     letter-spacing: 0;
+}
+
+.hero-h, .hero-p {
+    color: white !important;
+}
+
+.hero-p{
+    opacity: .8;
 }

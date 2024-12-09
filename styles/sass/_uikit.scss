@@ -1,9 +1,24 @@
 @import '_var';
 
-.w-button{
+.primary-button {
     border-radius: 0;
     background-color: $primaryColor;
     border: 0 solid $primaryColor;
     padding: 16px 32px;
-    color: #ffffff;
+    width: max-content;
+    color: $dark;
+    transition: all 200ms linear;
+
+    &:hover {
+        background-color: $dark;
+        color: white;
+    }
+
+    .w-button-inner {
+        color: inherit;
+        font-weight: 700;
+        transition: all 200ms linear;
+
+
+    }
 }
