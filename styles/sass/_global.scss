@@ -4,8 +4,14 @@
 .hero-banner {
     height: 100vh !important;
     vertical-align: middle;
+    width: 100%;
 }
 
 .header-banner {
     height: calc(100vh - 44px) !important;
+}
+
+//Content Width
+.container{
+    max-width: 1140px;
 }
