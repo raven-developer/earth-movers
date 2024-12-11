@@ -98,7 +98,6 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  scroll-behavior: smooth;
   min-height: 100%;
 }
 
@@ -142,4 +141,8 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+* {
+    box-sizing: border-box;
 }

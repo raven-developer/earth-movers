@@ -112,3 +112,14 @@ p {
     color: $dark;
     font-weight: 500;
 }
+
+footer{
+    .w-p {
+        color: white;
+        text-align: center;
+        font-size: $sm;
+    }
+    a{
+        color: $primaryColor;
+    }
+}

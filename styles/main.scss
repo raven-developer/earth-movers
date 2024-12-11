@@ -4,8 +4,13 @@
 @use 'sass/_fonts';
 @use 'sass/_global';
 @use 'sass/_uikit';
+@use 'sass/nav';
 
-//Individual Adjustments
+html {
+    scroll-behavior: smooth !important;
+}
+
+  //Individual Adjustments
 .container.hero-content {
     display: flex;
     flex-direction: row;
@@ -18,6 +23,12 @@
     background-size: cover;
 }
 
-.fold .w-p:not(.primary-button .w-button-inner, .u-lst .w-p){
-    color: #414141;
+.fold {
+    .w-p:not(.primary-button .w-button-inner, .u-lst .w-p){
+        color: #414141;
+    }
+
+    .inner-container-101 .content-col{
+        width: 90%;
+    }
 }

@@ -1,0 +1,98 @@
+@import '_var';
+
+.nav-1 {
+//    position: fixed;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 100;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+}
+
+.nav-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    min-height: 80px;
+    height: 100%;
+    margin: 24px 0;
+    padding: 0 30px;
+    max-width: 1220px;
+    width: 100%;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    max-width: 200px;    
+    width: 100%;
+
+    img {
+        max-height: 64px;
+        height: 40px;
+    }
+}
+
+.nav-links {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.nav-cta {
+    max-width: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-items {
+    @extend .font-paragraphs;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: white;
+    opacity: 1;
+    padding: 8px 0;
+
+    &:hover{
+        border-bottom: 1px solid $primaryColor;
+    }
+}
+
+.nav-items.active-page {
+    border-bottom: 1px solid $primaryColor;
+}
+
+.cta-button {
+    padding: 14px 28px;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    width: max-content;
+    color: $dark;
+    background-color: $primaryColor;
+    border: 0 solid $primaryColor;
+    border-radius: 0;
+    transition: all 200ms linear;
+
+    &:hover {
+        background-color: $dark;
+        color: white;
+    }
+
+    .w-button-inner {
+        color: inherit;
+        font-weight: 700;
+        transition: all 200ms linear;
+
+
+    }
+}

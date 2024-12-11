@@ -1,17 +1,27 @@
 @import '_var';
 
 //banner
+.full-height {
+    height: 100vh !important;
+    width: 100%;
+}
+
 .full-height .hero-section {
     height: 100vh !important;
     width: 100%;
     display: flex;
     align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 .inner-container {
     vertical-align: middle;
     display: flex;
-    margin: 0 40px;
+    justify-content: space-between;
+    margin: 0 30px;
+
 }
 
 .half-height .header-section {
@@ -27,18 +37,29 @@
     margin: 0 auto;
     box-sizing: border-box;
     width: 100%;
+    height: auto;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .fold .inner-container {
     vertical-align: middle;
     display: flex;
+    justify-content: space-between;
     flex-wrap: nowrap;
+    grid-column-gap: 48px;
+    grid-row-gap: 48px;
     margin: 0 40px;
+    height: auto;
+    min-height: 100%;
 }
 
 .section{
     margin: 130px 0;
+    position: relative;
 }
+
 .v-mid {
     vertical-align: middle;
 }
@@ -50,7 +71,7 @@
     grid-row-gap: 22px;
 }
 
-.btn-col {
+.content-col {
     display: flex;
     flex-flow: column;
     grid-row-gap: 64px;
@@ -80,3 +101,14 @@
 .flex-col {
     flex: 1;
 }
+
+.footer{
+    padding: 12px 0;
+    position: relative;
+    background-color: $dark;
+    height: auto;
+    .container{
+        justify-content: center;
+    }
+}
+
