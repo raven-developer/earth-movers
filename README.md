@@ -1,4 +1,2 @@
-# Earth Movers 
-    Practice website for HTML and CSS
-
-    Soon for JS Frameworks
+# web-template
+ Clone this template for Website
