@@ -38,9 +38,9 @@
     box-sizing: border-box;
     width: 100%;
     height: auto;
-    min-height: 100%;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
 .fold .inner-container {
@@ -53,6 +53,7 @@
     margin: 0 40px;
     height: auto;
     min-height: 100%;
+    overflow: hidden;
 }
 
 .section{
@@ -75,6 +76,8 @@
     display: flex;
     flex-flow: column;
     grid-row-gap: 64px;
+    min-height: 100%;
+    height: auto;
 }
 
 .sub-h-row {
@@ -92,6 +95,7 @@
     //TO BE UPDATED SOON
     height: 5px;
     width: 100%;
+    min-height: 100%;
 }
 
 .reverse {
@@ -112,3 +116,13 @@
     }
 }
 
+body{
+    height: 100%;
+    
+}
+
+.main-fold{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
