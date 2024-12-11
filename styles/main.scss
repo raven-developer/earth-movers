@@ -12,3 +12,12 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.hero-image-background {
+    background-color: #06071e;
+    background-size: cover;
+}
+
+.fold .w-p:not(.primary-button .w-button-inner, .u-lst .w-p){
+    color: #414141;
+}

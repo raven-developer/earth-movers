@@ -22,3 +22,31 @@
 
     }
 }
+
+.hero-h, .hero-p {
+    color: white !important;
+}
+
+.hero-p{
+    opacity: .8;
+}
+
+.fold{
+    color: $dark;
+}
+
+li{
+    margin-bottom: 4px;
+}
+
+li i {
+    color: #EBA801;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.w-sub {
+    border: 1px $dark solid;
+    width: max-content;
+    padding: 4px 12px;
+}

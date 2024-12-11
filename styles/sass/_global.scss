@@ -12,7 +12,7 @@
     vertical-align: middle;
     display: flex;
     margin: 0 40px;
-}   
+}
 
 .half-height .header-section {
     height: calc(100vh - 44px) !important;
@@ -22,24 +22,24 @@
 
 //Content Width
 .container {
-    position:relative;
+    position: relative;
     max-width: 1220px;
     margin: 0 auto;
     box-sizing: border-box;
     width: 100%;
 }
 
-.txt-spacer {
-    height: 32px;
-    overflow: hidden;
+.fold .inner-container {
+    vertical-align: middle;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 40px;
 }
 
-.btn-spacer {
-    height: 64px;
-    overflow: hidden;
+.section{
+    margin: 130px 0;
 }
-
-.v-mid{
+.v-mid {
     vertical-align: middle;
 }
 
@@ -56,12 +56,27 @@
     grid-row-gap: 64px;
 }
 
-.hid-col{
+.sub-h-row {
+    display: flex;
+    flex-flow: column;
+    grid-row-gap: 12px;
+}
+
+.hid-col {
     height: 5px;
     width: 100%;
 }
 
-.hero-image-background {
-    background-color: #06071e;
-    background-size: cover;
+.img-col {
+    //TO BE UPDATED SOON
+    height: 5px;
+    width: 100%;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-col {
+    flex: 1;
 }

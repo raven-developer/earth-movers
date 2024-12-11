@@ -6,7 +6,7 @@ html {
 }
 
 $xs: 0.5rem;
-$sm: 0.707rem;
+$sm: 14px; //Original Value: 0.707rem
 $rp: 1rem;
 $lp: 1.333rem;
 $h6: 1.414rem;
@@ -32,6 +32,7 @@ p {
     font-weight: 700;
     letter-spacing: 0;
     text-transform: uppercase;
+    color: inherit;
 }
 
 .w-h2 {
@@ -40,6 +41,7 @@ p {
     font-weight: 700;
     letter-spacing: 0;
     text-transform: uppercase;
+    color: inherit;
 }
 
 .w-h3 {
@@ -47,6 +49,7 @@ p {
     font-size: $h3;
     font-weight: 700;
     letter-spacing: 0;
+    color: inherit;
 }
 
 .w-h4 {
@@ -54,6 +57,7 @@ p {
     font-size: $h4;
     font-weight: 700;
     letter-spacing: 0;
+    color: inherit;
 }
 
 .w-h5 {
@@ -61,6 +65,7 @@ p {
     font-size: $h5;
     font-weight: 700;
     letter-spacing: 0;
+    color: inherit;
 }
 
 .w-h6 {
@@ -68,6 +73,7 @@ p {
     font-size: $h6;
     font-weight: 700;
     letter-spacing: 0;
+    color: inherit;
 }
 
 .w-p-l {
@@ -75,6 +81,7 @@ p {
     font-size: $rp;
     font-weight: 400;
     letter-spacing: 0;
+    color: inherit;
 }
 
 .w-p {
@@ -82,6 +89,7 @@ p {
     font-size: $rp;
     font-weight: 400;
     letter-spacing: 0;
+    color: inherit;
 }
 
 .w-menu {
@@ -89,12 +97,18 @@ p {
     font-size: $rp;
     font-weight: 400;
     letter-spacing: 0;
+    color: inherit;
 }
 
-.hero-h, .hero-p {
-    color: white !important;
+.w-sub {
+    @extend .font-paragraphs;
+    font-size: $sm;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: inherit;
 }
-
-.hero-p{
-    opacity: .8;
+.u-lst .w-p{
+    color: $dark;
+    font-weight: 500;
 }
