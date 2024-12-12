@@ -1,14 +1,40 @@
 @import '_var';
 
 .nav-1 {
-//    position: fixed;
-    position: absolute;
+    position: fixed;
+    //position: absolute;
     width: 100%;
     height: auto;
     z-index: 100;
+    background-color: transparent;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     display: flex;
     justify-content: center;
+    transition: all 200ms ease-in-out;
+}
+
+.sticky {
+    background-color: #ffffff;
+    border-bottom: 0;
+    box-shadow: 0 12px 12px rgba(0, 0, 0, 6%);
+    .nav-row {
+        margin: 0;
+        -webkit-transition: all 0.3s ease; /* WebKit/Blink browsers */
+        transition: all 0.3s ease;
+    }
+    .nav-items{
+        color: #0e0e0e
+    }
+    .nav-logo img{
+        height: 36px;
+        content: url("../uploads/1801220514102119200914/logo-1.png");
+        -webkit-transition: all 0.3s ease; /* WebKit/Blink browsers */
+        transition: all 0.3s ease;
+    }
+    .cta-button{
+        padding: 10px 28px;
+    }
+
 }
 
 .nav-row {
@@ -22,12 +48,14 @@
     padding: 0 30px;
     max-width: 1220px;
     width: 100%;
+    -webkit-transition: all 0.3s ease; /* WebKit/Blink browsers */
+    transition: all 0.3s ease;
 }
 
 .nav-logo {
     display: flex;
     align-items: center;
-    max-width: 200px;    
+    max-width: 200px;
     width: 100%;
 
     img {
@@ -55,14 +83,14 @@
 
 .nav-items {
     @extend .font-paragraphs;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 400;
     letter-spacing: 0;
     color: white;
     opacity: 1;
     padding: 8px 0;
 
-    &:hover{
+    &:hover {
         border-bottom: 1px solid $primaryColor;
     }
 }

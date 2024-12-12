@@ -19,25 +19,24 @@
 </head>
 
 <body>
-  <div class="full-height hero-image-background">
-    <!--Navigation Bar-->
-    <div class="nav-1">
-      <div class="nav-row">
-        <div class="nav-logo">
-          <a href="../home/"><img src="../uploads/1801220514102119200914/logo.svg" alt="Logo Image"></a>
-        </div>
-        <div class="nav-links">
-          <a class="nav-items active-page" href="../home/">Home</a>
-          <a class="nav-items" href="#who-we-are">Who We Are</a>
-          <a class="nav-items" href="">How We Work</a>
-          <a class="nav-items" href="#contact-us">Contact Us</a>
-        </div>
-        <div class="nav-cta">
-          <a href="#contact-us" class="cta-button"><span class="w-button-inner w-p">Book Us Now</span></a>
-        </div>
+  <!--Navigation Bar-->
+  <nav class="nav-1">
+    <div class="nav-row">
+      <div class="nav-logo">
+        <a href="../home/"><img src="../uploads/1801220514102119200914/logo.svg" alt="Logo Image"></a>
+      </div>
+      <div class="nav-links">
+        <a class="nav-items active-page" href="../home/">Home</a>
+        <a class="nav-items" href="#who-we-are">Who We Are</a>
+        <a class="nav-items" href="">How We Work</a>
+        <a class="nav-items" href="#contact-us">Contact Us</a>
+      </div>
+      <div class="nav-cta">
+        <a href="#contact-us" class="cta-button"><span class="w-button-inner w-p">Book Us Now</span></a>
       </div>
     </div>
-
+  </nav>
+  <div class="full-height hero-image-background">
     <!--Banner-->
     <div class="hero-section hero-image-background">
       <div class="container ">
@@ -136,7 +135,18 @@
       </footer>
     </div> <!--End of Main Fold-->
 </body>
+
 </html>
 
 <script>
+  window.addEventListener('scroll', () => {
+    const nav = document.querySelector('.nav-1'); // Adjust the selector as needed
+    const scrollY = window.scrollY || document.documentElement.scrollTop;
+
+    if (scrollY > 20) {
+      nav.classList.add('sticky');
+    } else {
+      nav.classList.remove('sticky');
+    }
+  });
 </script>

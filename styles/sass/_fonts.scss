@@ -5,6 +5,7 @@ html {
     font-size: 18px;
 }
 
+//For Desktop
 $xs: 0.5rem;
 $sm: 14px; //Original Value: 0.707rem
 $rp: 1rem;
@@ -16,8 +17,29 @@ $h3: 3.998rem;
 $h2: 5.653rem;
 $h1: 7.993rem;
 
+//For Laptop
+/* Tablet styles */
+@media (max-width: 1023px) {
+    html {
+        font-size: 16px;
+    }
+
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+    html {
+        font-size: 16px;
+    }
+
+}
+
 //Variables
-h1, h2, h4, h5, h6 {
+h1,
+h2,
+h4,
+h5,
+h6 {
     line-height: 1;
     color: $dark;
 }
@@ -108,18 +130,20 @@ p {
     text-transform: uppercase;
     color: inherit;
 }
-.u-lst .w-p{
+
+.u-lst .w-p {
     color: $dark;
     font-weight: 500;
 }
 
-footer{
+footer {
     .w-p {
         color: white;
         text-align: center;
         font-size: $sm;
     }
-    a{
+
+    a {
         color: $primaryColor;
     }
 }
