@@ -91,7 +91,7 @@ p {
 }
 
 .w-h6 {
-    @extend .font-headings;
+    @extend .font-paragraphs;
     font-size: $h6;
     font-weight: 700;
     letter-spacing: 0;
@@ -147,3 +147,4 @@ footer {
         color: $primaryColor;
     }
 }
+
