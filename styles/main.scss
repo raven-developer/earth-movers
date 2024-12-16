@@ -1,16 +1,12 @@
 //Imports
 @use 'sass/_reset';
-@use 'sass/_var';
 @use 'sass/_fonts';
 @use 'sass/_global';
 @use 'sass/_uikit';
 @use 'sass/nav';
+@import 'sass/_var';
 
-html {
-    scroll-behavior: smooth !important;
-}
-
-  //Individual Adjustments
+//Individual Adjustments
 .container.hero-content {
     display: flex;
     flex-direction: row;
@@ -19,7 +15,12 @@ html {
 }
 
 .hero-image-background {
-    background-color: #06071e;
+    background-color: $dark;
+    background-size: cover;
+}
+
+.cta-section {
+    background-color: $dark;
     background-size: cover;
 }
 
@@ -27,8 +28,11 @@ html {
     background-color: #f5f5f5;
 }
 
+.img-col.form {
+    background-color: white;
+}
 .fold {
-    .w-p:not(.primary-button .w-button-inner, .u-lst .w-p){
+    .w-p:not(.primary-button-2 .w-button-inner,.primary-button .w-button-inner, .u-lst .w-p){
         color: #414141;
     }
 
@@ -38,11 +42,11 @@ html {
 }
 
 .about-section.section{
-    padding-bottom: 65px;
+    padding-bottom: 40px;
 }
 
 .what-we-do-section.section{
-    padding-top: 65px;
+    padding-top: 40px;
 }
 
 .inner-container-103{
@@ -58,4 +62,37 @@ html {
     .content-box .sub-h-row {
         grid-row-gap: 4px;
     }
+}
+
+.inner-container-101{
+    .img-col {
+        height: 686px;
+        width: 70%;
+        img {
+            object-position: -44px;
+        }
+    }
+}
+.inner-container-102{
+    .img-col {
+        height: 686px;
+        width: 160%;
+    }
+}
+
+.inner-container-104 {
+    .img-col{
+        width: 82%;
+    }
+}
+
+form label {
+    display:none
+}
+
+
+.contact-us-section .container,
+.contact-us-section .inner-container-105,
+.inner-container-105 .img-col{
+    overflow: unset;
 }

@@ -15,8 +15,7 @@
 
 .sticky {
     background-color: #ffffff;
-    border-bottom: 0;
-    box-shadow: 0 12px 12px rgba(0, 0, 0, 6%);
+    border-bottom: 1px solid $dark;
     .nav-row {
         margin: 0;
         -webkit-transition: all 0.3s ease; /* WebKit/Blink browsers */

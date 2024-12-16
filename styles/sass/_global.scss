@@ -1,13 +1,17 @@
 @import '_var';
 
+html {
+    scroll-behavior: smooth !important;
+}
+
 //banner
 .full-height {
     height: 100vh !important;
     width: 100%;
 }
 
-.full-height .hero-section {
-    height: 100vh !important;
+.hero-section {
+    height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -48,6 +52,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
+    align-items: center;
     grid-column-gap: 48px;
     grid-row-gap: 48px;
     margin: 0 30px;
@@ -63,66 +68,4 @@
 
 .v-mid {
     vertical-align: middle;
-}
-
-//Spacers
-.h-p-col {
-    display: flex;
-    flex-flow: column;
-    grid-row-gap: 22px;
-}
-
-.content-col {
-    display: flex;
-    flex-flow: column;
-    grid-row-gap: 64px;
-    min-height: 100%;
-    height: auto;
-}
-
-.sub-h-row {
-    display: flex;
-    flex-flow: column;
-    grid-row-gap: 12px;
-}
-
-.hid-col {
-    height: 5px;
-    width: 100%;
-}
-
-.img-col {
-    //TO BE UPDATED SOON
-    height: 5px;
-    width: 100%;
-    min-height: 100%;
-}
-
-.reverse {
-    flex-direction: row-reverse;
-}
-
-.flex-col {
-    flex: 1;
-}
-
-.footer{
-    padding: 12px 0;
-    position: relative;
-    background-color: $dark;
-    height: auto;
-    .container{
-        justify-content: center;
-    }
-}
-
-body{
-    height: 100%;
-    
-}
-
-.main-fold{
-    display: flex;
-    flex-direction: column;
-    overflow: auto;
 }

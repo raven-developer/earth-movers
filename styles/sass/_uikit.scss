@@ -18,8 +18,25 @@
         color: inherit;
         font-weight: 700;
         transition: all 200ms linear;
+    }
+}
 
+.primary-button-2 {
+    border-radius: 0;
+    background-color: $primaryColor;
+    border: 0 solid $primaryColor;
+    padding: 16px 32px;
+    width: max-content;
+    color: $dark;
+    transition: all 200ms linear;
 
+    &:hover {
+        background-color: white;
+    }
+    .w-button-inner {
+        color: $dark;
+        font-weight: 700;
+        transition: all 200ms linear;
     }
 }
 
@@ -39,14 +56,27 @@ li{
     margin-bottom: 4px;
 }
 
+a .w-p span {
+    font-weight: 700;
+}
+
 li i {
     color: $primaryColor;
     margin-right: 12px;
     font-size: 16px;
+    text-align: center;
+    height: 16px;
+    width: 16px;
 }
 
 .w-sub {
     border: 1px $dark solid;
+    width: max-content;
+    padding: 4px 12px;
+}
+
+.cta-section .w-sub {
+    border: 1px $primaryColor solid;
     width: max-content;
     padding: 4px 12px;
 }
@@ -100,4 +130,97 @@ li i {
         height: auto;
         object-fit: contain;
     }
+}
+
+//Spacers
+.h-p-col {
+    display: flex;
+    flex-flow: column;
+    grid-row-gap: 22px;
+}
+
+.content-col {
+    display: flex;
+    flex-flow: column;
+    grid-row-gap: 64px;
+    min-height: 100%;
+    height: auto;
+}
+
+.sub-h-row {
+    display: flex;
+    flex-flow: column;
+    grid-row-gap: 12px;
+}
+
+.hid-col {
+    height: 5px;
+    width: 100%;
+}
+
+.img-col {
+    position: relative;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-col {
+    flex: 1;
+}
+
+.footer{
+    padding: 12px 0;
+    position: relative;
+    background-color: $dark;
+    height: auto;
+    .container{
+        justify-content: center;
+    }
+}
+
+body{
+    height: 100%;
+    
+}
+
+.main-fold{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.img-col.form {
+    padding: 30px;
+    width: 100%;
+    height: auto;
+    //border: 1px solid #414141;
+    box-shadow: 0 0 29px 6px rgba(0, 0, 0, .07);
+    label, input, textarea, button.primary-button{
+        max-width: 100%;        
+        min-width: 100%;
+        width: 100%;
+    }
+}
+
+textarea, input {
+    padding: 12px 20px;
+    border: 1px solid rgba(6, 7, 30, .2);
+}
+
+textarea:active, input:active, textarea:focus, input:focus {
+    border: 1px solid rgba(6, 7, 30, .8);
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
 }

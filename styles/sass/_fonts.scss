@@ -100,7 +100,7 @@ p {
 
 .w-p-l {
     @extend .font-paragraphs;
-    font-size: $rp;
+    font-size: $lp;
     font-weight: 400;
     letter-spacing: 0;
     color: inherit;
@@ -134,6 +134,32 @@ p {
 .u-lst .w-p {
     color: $dark;
     font-weight: 500;
+}
+
+label, input, textarea {
+    @extend .font-paragraphs;
+    font-size: $rp;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: inherit;
+}
+
+input, textarea {
+    color: #313131;
+}
+
+form .w-p a {
+    font-weight: 700;
+    color: $primaryColor;
+}
+
+.cta-section{
+    .w-h2, .w-p:not(.w-button-inner){
+        color: white !important;
+    }
+    .w-sub {
+        color: $primaryColor;
+    }
 }
 
 footer {
