@@ -24,7 +24,7 @@
     background-size: cover;
 }
 
-.our-process-section {
+.contact-us-section, .our-process-section {
     background-color: #f5f5f5;
 }
 
@@ -95,4 +95,21 @@ form label {
 .contact-us-section .inner-container-105,
 .inner-container-105 .img-col{
     overflow: unset;
+}
+
+.inner-container-105 .content-col {
+    grid-row-gap: 32px;
+}
+
+.inner-container-106 {
+    .content-col {
+        
+    }
+    .h-p-col {
+
+    }
+}
+
+.inner-container.inner-container-106{
+    align-items: flex-start;
 }
